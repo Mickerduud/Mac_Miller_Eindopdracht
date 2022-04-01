@@ -1,0 +1,512 @@
+*{
+font-family: 'Screebie-vmKy';
+  margin: 0;
+  padding: 0;
+}
+.chosen_products{
+    overflow-y: auto;
+}
+.bod_ab{
+  background-color: pink;
+  z-index: -1
+}
+header{
+  height: 100vh;
+  background: url(images/bg_expanded.PNG) no-repeat center center fixed;
+  position: relative;
+  background-size: 200%;
+  background-position: 15% 37%;
+}
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  background-color: black;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+
+  color: white;
+  width: 100%;
+  height: 90px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0);
+    display: grid;
+    grid-template-rows: 60%;
+    grid-template-columns: 55% 15% 15% 15%
+}
+.seaimg{
+  -webkit-animation: rotating 8s linear infinite;
+-moz-animation: rotating 8s linear infinite;
+-ms-animation: rotating 8s linear infinite;
+-o-animation: rotating 8s linear infinite;
+animation: rotating 8s linear infinite;
+  margin-left: auto;
+    opacity: 0.6;
+  border-radius: 500px;
+  height:20%;
+  width: 20%;
+  z-index: 1;
+box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.51);
+}
+
+.item2{
+  display: flex;
+  align-content: center;
+    align-items: center;
+}
+.textcard{
+    overflow: auto;
+  margin: auto;
+  font-size: 100%;
+    margin-top: 4%;
+}
+.item3{
+    transition:  0.4s, 0.6s;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+    align-content: center;
+    align-items: center;
+    color: #85176F;
+}
+.item3:hover {
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+.elem{
+  text-decoration: none;
+  color: inherit;
+  margin: auto;
+}
+.cards-container{
+  display: grid;
+    background-color: pink;
+    height: 90vh;
+    opacity: 0.8;
+    display: grid;
+    grid-template-rows: 80%;
+    grid-template-columns: 21% 21% 21% 21%;
+    grid-column-gap: 4%;
+}
+.merch-cards-container{
+  display: grid;
+    background-color: pink;
+    height: 120vh;
+    opacity: 0.8;
+    display: grid;
+    grid-template-rows: repeat(2, 60vh);
+    grid-template-columns: repeat(4, 21%);
+    grid-column-gap: 4%;
+}
+.afrekenen_container{
+  display: grid;
+  height: 20vh;
+  width: 100%;
+}
+.afrekenen_container > button{
+  color: white;
+  margin: auto;
+  height: 10vh;
+  width: 50%;
+  border-radius: 20px;
+  background-color: pink;
+border: none;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+  transition:  0.4s, 0.6s;
+}
+.afrekenen_container > button:hover{
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+.merch-card{
+  margin-top: 5%;
+  margin-left: 10%;
+  border-radius: 5%;
+  background-color: white;
+  height: 85%;
+  width: 100%;
+  transition:  0.4s, 0.6s;
+}
+.merch-card:hover{
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+.merch-card > figure{
+  width: 100%;
+  height: 80%;
+}
+.merch-card > figure > img{
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+}
+.merch-card > h3{
+margin-left: 3%;
+}
+.titlecard{
+  color: white;
+  opacity: 0.6;
+  font-size: 500%;
+    display: grid;
+    margin-top: 18%;
+    margin-right: 9%;
+    z-index: 2;
+}
+.TextContainer{
+    margin-top: -80px;
+  -ms-transform: SkewY(1deg); /* IE 9 */
+  transform: SkewY(1deg);
+  display: grid;
+  grid-template-columns: 40% 40%;
+  background-color: white;
+  width: 90%;
+  height: 100%;
+  grid-template-rows: 60%;
+  margin-left: 5%;
+  grid-gap: 8%;
+}
+.titlecard > h1{
+margin-left: auto;
+z-index: 1;
+
+}
+.merchnew{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(255,192,203,0.8);
+  height: 30vh;
+
+}
+.merchnew > h1{
+color: white;
+z-index: 1;
+}
+.card{
+  margin-top: 5%;
+  margin-left: 10%;
+  border-radius: 5%;
+  background-color: white;
+  height: 70%;
+  width: 100%;
+  transition:  0.4s, 0.6s;
+}
+.imgcard> figure >img{
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 0 4px rgb(0,0,0,1);
+}
+.card:hover{
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.card > figure{
+  width: 100%;
+  height: 90%;
+}
+.card > figure > img{
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+}
+.card > h3{
+margin-left: 3%;
+}
+.titlecard > h2{
+  margin-left: auto;
+  font-size: 50%;
+  color: white;
+  position: absolute;
+  left: 0%;
+  transform: translateX(-50%);
+    -webkit-animation-fill-mode: forwards;
+    color: white;
+  animation-name: spin;
+  animation-duration: 1500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+footer > .foot-container{
+  margin-top: -1%;
+  background-color: rgb(255,192,203,0.8);
+  width: 100%;
+  height: 85vh;
+  display: grid;
+  grid-gap: 3.5%;
+  grid-template-columns: 31% 31% 31%;
+  grid-template-rows: 85%;
+  color: white;
+  font-size: 130%;
+}
+a, a:hover, a:focus, a:active {
+     text-decoration: none;
+     color: inherit;
+}
+.Fan-memories a:hover, .Beautifull-videos a:hover, .social-media a:hover{
+  opacity: 0.7;
+}
+.Fan-memories{
+  font-size: 100%;
+  text-decoration: none;
+  color: inherit;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.Beautifull-videos{
+  text-decoration: none;
+  color: inherit;
+  margin: auto;
+}
+.social-media{
+  text-decoration: none;
+  color: inherit;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#scrollToTopBtn {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+}
+.Totop{
+  margin-left: 80%;
+  grid-column-start: 3;
+  grid-row-start:2;
+}
+.container_ab{
+  margin-top: -1%;
+  display: grid;
+  height: 58.1vh;
+  width: 100%;
+  -ms-transform: SkewY(1deg); /* IE 9 */
+  transform: SkewY(1deg);
+  margin-bottom: 6%;
+}
+.container_ab > figure > img{
+  width: 100%;
+  height: 100%;
+}
+.TextContainer2{
+  background-color: rgb(255,192,203,0.8);
+display: grid;
+grid-template-columns: 50% 40%;
+width: 100%;
+height: 100%;
+grid-template-rows: 60%;
+grid-gap: 8%;
+margin-bottom: 5%;
+}
+.TextContainer2 > article{
+  margin-top: 20%;
+  margin-left: 2%;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.TextContainer3{
+  opacity: 0.8;
+-ms-transform: SkewY(2deg); /* IE 9 */
+transform: SkewY(2deg);
+display: grid;
+grid-template-columns: 100%;
+background-color: #DDDEE4;
+width: 100%;
+height:40vh;
+grid-template-rows: 100%;
+grid-gap: 8%;
+}
+.TXT{
+    margin: auto;
+}
+.TXT>h1{
+  -ms-transform: SkewY(1deg); /* IE 9 */
+  transform: SkewY(1deg);
+  font-size: 6vh;
+}
+.TXT> h3{
+    -ms-transform: SkewY(1deg); /* IE 9 */
+    transform: SkewY(1deg);
+    font-size: 5vh;
+}
+.ok{
+  display: grid;
+  grid-template-rows: auto;
+  height: 150vh;
+  width: 100%;
+}
+.bg_Devine_Feminine{
+  background: url("images/ab43f6663c4df0c5475b25f638119207.jpg") no-repeat;
+  background-size: 100%;
+  background-position: 10% 33%;
+}
+.bg_faces{
+    background: url("images/Mac Miller - Faces (Vinyl).jpg") no-repeat;
+    background-size: 100%;
+    background-position: 10% 33%;
+
+}
+.bg_good_am{
+  background: url("images/CMJ7wuZUMAA9eD-.jpg") no-repeat;
+  background-size: 100%;
+  background-position: 10% 45%;
+}
+.bg_Kids{
+  background: url("images/https___hypebeast.com_image_2020_08_mac-miller-kids-deluxe-10th-anniversary-album-stream-tw.jpg") no-repeat;
+  background-size: 100%;
+  background-position: 10% 50%;
+}
+.bg_circles{
+  background: url("images/603e891d2d8332001ce1ad5c.jpg") no-repeat;
+  background-size: 100%;
+  background-position: 10% 50%;
+}
+.Faces{
+  margin: auto;
+
+}
+article > .Faces > h2{
+    font-size: 300%;
+      margin: 4%;
+      color: white;
+
+}
+.Kostenplaatje{
+  top: 0;
+  z-index: 3;
+  display: grid;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  background-color: white;
+  grid-template-columns: 80vw;
+  position: fixed;
+  border-radius: 20px;
+  height:80vh;
+  width: 80vw;
+  display: none;
+}
+#background{
+    top: 0;
+    display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.4;
+}
+.betalen{
+  border-left: 1px solid lightgray;
+  display: grid;
+  grid-template-rows: 70vh 10vh
+}
+#tot{
+    border-top: 1px solid lightgray;
+}
+@keyframes spin {
+  from{
+    visibility: hidden;
+    left: 0%;
+    top: 75%;
+  }
+  to{
+    visibility: visible;
+    left: 88%;
+    top: 75%;
+  }
+}
+@font-face {
+  font-family: 'Screebie-vmKy';
+  src:  url('Fonts/Screebie-vmKy.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes ok {
+  from {
+    content: "";
+  }
+  to {
+    content: "added to shopphingcard"
+  }
+}
+@media screen
+ and (max-device-width: 600px)
+ and (min-device-width: 400px)
+{
+  header{
+    height: 100vh;
+    background: url(images/bg_expanded.PNG) no-repeat center center fixed;
+    position: relative;
+    background-size: 490%;
+    background-position: 20% 27%;
+  }
+  .cards-container{
+    display: grid;
+      background-color: pink;
+      height: 320vh;
+      opacity: 0.8;
+      display: grid;
+      grid-template-columns: 80%;
+      grid-template-rows: 1fr;
+      grid-row-gap: 0%;
+  }
+}
+@media screen
+ and (max-device-width: 1100px)
+ and (min-device-width: 600px)
+{
+.merch-cards-container{
+
+  height: 600vh;
+  grid-template-columns: 80vw;
+  grid-auto-rows: 80vh;
+}
+  header{
+    height: 100vh;
+    background: url(images/bg_expanded.PNG) no-repeat center center fixed;
+    position: relative;
+    background-size: 332%;
+    background-position: 20% 27%;
+  }
+  .cards-container{
+    display: grid;
+      background-color: pink;
+      height: 470vh;
+      opacity: 0.8;
+      display: grid;
+      grid-template-columns: 80%;
+      grid-template-rows: 122.5vh 122.5vh 122.5vh 100vh;
+      grid-row-gap: 0%;
+  }
+  .card{
+    margin-top: 0;
+    height: 80%;
+  }
+.container_ab{
+  height: 90%
+}
+}
